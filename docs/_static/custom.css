@@ -1,0 +1,23 @@
+/* Small readability tweaks for the EDPS documentation. */
+
+/* Long option/keyword tables should scroll rather than overflow the page. */
+.wy-table-responsive table td,
+.wy-table-responsive table th {
+    white-space: normal;
+}
+
+table.docutils {
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+/* Give literal blocks a touch more breathing room. */
+div.highlight pre {
+    line-height: 1.4;
+}
+
+/* Keep inline literals from wrapping mid-token where it hurts readability. */
+code.literal {
+    white-space: nowrap;
+}
